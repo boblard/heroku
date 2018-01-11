@@ -73,6 +73,12 @@
 header('Content-Type: application/json');
 
 // 23) finally return error message or the array of images
+if($_FILES["file"]["tmp_name"]) {
+    $filename = $_FILES["the_file"]["name"];
+    $source = $_FILES["the_file"]["tmp_name"];
+    $type = $_FILES["the_file"]["type"];
+
 echo json_encode($_FILES);
 var_dump($_FILES);
+
 
