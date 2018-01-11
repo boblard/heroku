@@ -74,4 +74,5 @@ header('Content-Type: application/json');
 
 // 23) finally return error message or the array of images
 echo json_encode($_FILES);
+var_dump($_FILES);
 
